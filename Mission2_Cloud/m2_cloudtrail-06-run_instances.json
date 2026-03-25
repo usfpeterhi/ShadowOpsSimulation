@@ -1,0 +1,68 @@
+{
+  "eventVersion": "1.08",
+  "userIdentity": {
+    "type": "IAMUser",
+    "principalId": "AIDAI23EXAMPLEUSERID",
+    "arn": "arn:aws:iam::123456789012:user/devops-deploy-svc",
+    "accountId": "123456789012",
+    "accessKeyId": "AKIAVJ3X7M2QEXAMPLE4",
+    "userName": "devops-deploy-svc"
+  },
+  "eventTime": "2024-03-14T23:36:11Z",
+  "eventSource": "ec2.amazonaws.com",
+  "eventName": "RunInstances",
+  "awsRegion": "eu-west-2",
+  "sourceIPAddress": "91.108.56.142",
+  "userAgent": "aws-cli/2.15.10 Python/3.11.6 Linux/5.15.0",
+  "requestParameters": {
+    "instancesSet": {
+      "items": [
+        {
+          "imageId": "ami-0c55b159cbfafe1f0",
+          "minCount": 1,
+          "maxCount": 1,
+          "instanceType": "t3.xlarge"
+        }
+      ]
+    },
+    "monitoring": {
+      "enabled": false
+    },
+    "tagSpecificationSet": {
+      "items": [
+        {
+          "resourceType": "instance",
+          "tags": [
+            {
+              "key": "Name",
+              "value": "temp-analysis-worker"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "responseElements": {
+    "instancesSet": {
+      "items": [
+        {
+          "instanceId": "i-0abcd1234efgh5678",
+          "instanceType": "t3.xlarge",
+          "launchTime": "Mar 14, 2024 11:36:11 PM",
+          "placement": {
+            "availabilityZone": "eu-west-2a"
+          }
+        }
+      ]
+    }
+  },
+  "requestID": "f6g7h8i9-j0k1-2345-fghi-456789012345",
+  "eventID": "6f7g8h9i-0j1k-2345-6789-012345fghijk",
+  "readOnly": false,
+  "eventType": "AwsApiCall",
+  "managementEvent": true,
+  "recipientAccountId": "123456789012",
+  "additionalEventData": {
+    "note": "This is the first activity in eu-west-2 region for this AWS account"
+  }
+}
