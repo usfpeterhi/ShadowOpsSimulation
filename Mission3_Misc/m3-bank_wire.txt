@@ -1,0 +1,19 @@
+Contoso Industries - Wire Transfer Confirmation
+------------------------------------------------
+Transfer Date: 06-Mar-2025 11:03 EST
+Reference Number: WT-2025-0316-184320
+Ordering Customer: Contoso Industries
+Debit Account: ****-****-****-1290
+
+Beneficiary Name: Northshore Fabrication LLC
+Beneficiary Bank: SomeBank EU
+Beneficiary IBAN: DE89 3704 0044 0532 0130 01
+Beneficiary SWIFT: SOMEDEFFXXX
+
+Amount: USD 184,320.00
+Exchange Rate: 1.00
+Transfer Status: Completed
+
+Notes: Payment for Invoice 2025-0231
+Entered By: ERIN.M
+Approved By: J.SMITH
