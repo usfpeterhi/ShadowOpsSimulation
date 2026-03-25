@@ -1,0 +1,14 @@
+<Event>
+  <System>
+    <Provider Name="Microsoft-Windows-Security-Auditing"/>
+    <EventID>4688</EventID>
+    <TimeCreated SystemTime="2024-02-21T02:16:11.412Z"/>
+    <Computer>CLIENT-WKS-17.corp.techflow.local</Computer>
+  </System>
+  <EventData>
+    <Data Name="SubjectUserName">SYSTEM</Data>
+    <Data Name="NewProcessName">C:\Windows\System32\cmd.exe</Data>
+    <Data Name="ParentProcessName">C:\Program Files (x86)\ScreenConnect Client (xxxxxxxx)\ScreenConnect.ClientService.exe</Data>
+    <Data Name="CommandLine">cmd.exe /c powershell.exe -nop -w hidden -enc UwBFAFQALQBN...</Data>
+  </EventData>
+</Event>
