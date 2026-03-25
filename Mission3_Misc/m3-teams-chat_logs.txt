@@ -1,0 +1,26 @@
+[2025-03-06 09:52] Erin (AP):
+Morning! Northshore sent over updated banking details for their latest invoice (2025-0231). They said it's urgent we use the new account today.
+
+[2025-03-06 09:53] James (AP Manager):
+Is it coming from their usual billing contact?
+
+[2025-03-06 09:54] Erin (AP):
+Looks like it. Same "Northshore Billing" display name, thread is on top of the existing invoice chain.
+
+[2025-03-06 09:55] Carla (Finance Controller):
+We’ve never changed their banking before, right?
+
+[2025-03-06 09:56] Erin (AP):
+Not that I remember, but the email seems legit. Want me to call them or just process?
+
+[2025-03-06 09:57] James (AP Manager):
+We’re already late on that payment. As long as it’s from them, go ahead and process today.
+
+[2025-03-06 11:15] Erin (AP):
+Wire sent. Confirmation attached to NetSuite record.
+
+[2025-03-10 10:08] Erin (AP):
+Northshore just emailed asking why Invoice 2025-0231 is still unpaid. They say they never changed their bank info…
+
+[2025-03-10 10:09] Carla (Finance Controller):
+Wait, what? Stop everything. Loop in Security *now*.
