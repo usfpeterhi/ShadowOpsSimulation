@@ -1,0 +1,32 @@
+Threat Intel Notes - BEC Incident (Northshore Impersonation)
+------------------------------------------------------------
+
+1. Attacker Domain:
+- Domain: northshore-fabr1cation.com
+- Registration Date: 2025-02-25
+- Registrar: ExampleRegistrar Ltd.
+- Notes: Typosquat of legitimate vendor domain northshore-fabrication.com
+
+2. Hosting / Infrastructure:
+- MX Record points to: mail.proton-example.com
+- A record: 203.0.113.45
+- ASN: AS64555 ExampleCloud Networks
+- Reverse DNS: smtp-113-45.examplecloud.net
+
+3. Campaign Indicators:
+- Same sender IP (203.0.113.45) observed in open-source feeds associated with:
+  - Multiple invoice-themed BEC attempts against manufacturing and construction companies.
+- Subject lines often include:
+  - "Updated banking details"
+  - "Urgent payment information"
+  - "Change of remittance account"
+
+4. TTPs Observed:
+- Initial access via credential harvesting against employee portal lookalike domains.
+- Use of mailbox rules to hide security alerts and vendor replies.
+- Quick pivot to invoice redirection once thread access is obtained.
+- Limited dwell time focused solely on payment redirection (no data theft observed).
+
+Assessment:
+- Activity is consistent with financially motivated BEC operators.
+- No direct evidence of vendor infrastructure compromise; more likely pure impersonation + AP mailbox compromise.
