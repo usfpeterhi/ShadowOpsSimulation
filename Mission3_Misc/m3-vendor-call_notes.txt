@@ -1,0 +1,20 @@
+Ticket ID: AP-INC-2025-0310-NSF
+Created By: Erin (AP)
+Created On: 2025-03-10 10:32 EST
+
+Summary:
+Phone call with Maria (Billing, Northshore Fabrication) regarding payment status for Invoice 2025-0231.
+
+Details:
+- Maria states they did NOT change their banking details recently.
+- Maria confirms their correct account is still:
+  Bank: First National US
+  Account Ending: 4821
+- When asked about the email requesting updated banking information, Maria said:
+  - She did not send any such email.
+  - Their IT team has not reported any mailbox compromise.
+- Maria requested proof of the "updated banking details" email.
+
+Conclusion:
+Email requesting banking change is likely fraudulent / impersonation.
+Escalated to Security and Finance leadership.
