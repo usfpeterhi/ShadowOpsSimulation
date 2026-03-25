@@ -1,0 +1,43 @@
+#devops-team — March 14, 2024
+
+[10:45 PM] Jordan Kim
+Quick fix pushed to api-deployment-scripts repo. Deploy timeout issue should be resolved.
+
+[10:52 PM] Jordan Kim
+Changes deployed. Testing now.
+
+[11:52 PM] Maya Patel (SOC Analyst - Tier 1)
+@jordan.kim Hey, getting a GuardDuty alert for the devops-deploy-svc account. Unusual API calls from Ukraine?
+
+[11:54 PM] Jordan Kim
+What? That doesn't make sense. I just pushed a deployment script update like an hour ago. I'm in California.
+
+[11:55 PM] Maya Patel (SOC Analyst - Tier 1)
+Alert says CreateUser, AttachUserPolicy, stuff we don't normally do. IP is 91.108.56.142. Ring a bell?
+
+[11:56 PM] Jordan Kim
+No, that's not me. I don't even have permissions to create IAM users... do I?
+
+[11:57 PM] Sarah Martinez (Lead DevOps Engineer)
+@jordan.kim What repo did you push to?
+
+[11:58 PM] Jordan Kim
+api-deployment-scripts. Just updated the deploy.sh timeout parameter.
+
+[11:59 PM] Sarah Martinez (Lead DevOps Engineer)
+Is that repo public or private?
+
+[12:01 AM] Jordan Kim
+Uh... I think it's private? Let me check.
+
+[12:02 AM] Jordan Kim
+Oh no.
+
+[12:02 AM] Sarah Martinez (Lead DevOps Engineer)
+What.
+
+[12:03 AM] Jordan Kim
+It's public. And I think I might have accidentally committed the .env file with AWS credentials.
+
+[12:04 AM] Maya Patel (SOC Analyst - Tier 1)
+Escalating to on-call IR team. @david.torres
