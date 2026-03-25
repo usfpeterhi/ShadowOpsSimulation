@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "2.0",
+  "accountId": "123456789012",
+  "region": "us-east-1",
+  "partition": "aws",
+  "id": "eeb88ab73d238b93d0b6f9d0e0e1c8f2",
+  "arn": "arn:aws:guardduty:us-east-1:123456789012:detector/12abc34d567e8fa901bc2d34e56789f0/finding/eeb88ab73d238b93d0b6f9d0e0e1c8f2",
+  "type": "UnauthorizedAccess:IAMUser/AnomalousBehavior",
+  "resource": {
+    "accessKeyDetails": {
+      "accessKeyId": "AKIAVJ3X7M2QEXAMPLE4",
+      "principalId": "AIDAI23EXAMPLEUSERID",
+      "userType": "IAMUser",
+      "userName": "devops-deploy-svc"
+    }
+  },
+  "severity": 8,
+  "createdAt": "2024-03-14T23:47:23.456Z",
+  "updatedAt": "2024-03-14T23:47:23.456Z",
+  "title": "Anomalous API activity from IAM user devops-deploy-svc",
+  "description": "API calls from IAM user devops-deploy-svc from IP address 91.108.56.142 are not consistent with the user's historical behavior. Observed actions include CreateUser and AttachUserPolicy which have not been performed by this principal in the past 90 days.",
+  "service": {
+    "serviceName": "guardduty",
+    "detectorId": "12abc34d567e8fa901bc2d34e56789f0",
+    "action": {
+      "actionType": "AWS_API_CALL",
+      "awsApiCallAction": {
+        "api": "CreateUser",
+        "serviceName": "iam.amazonaws.com",
+        "remoteIpDetails": {
+          "ipAddressV4": "91.108.56.142",
+          "organization": {
+            "asn": "59930",
+            "asnOrg": "Kyivstar",
+            "isp": "Kyivstar",
+            "org": "Kyivstar"
+          },
+          "country": {
+            "countryName": "Ukraine"
+          },
+          "city": {
+            "cityName": "Kyiv"
+          },
+          "geoLocation": {
+            "lat": 50.4501,
+            "lon": 30.5234
+          }
+        }
+      }
+    },
+    "additionalInfo": {
+      "value": "{\"recentApiCalls\":[\"CreateUser\",\"AttachUserPolicy\",\"ListBuckets\",\"GetObject\",\"DescribeInstances\",\"RunInstances\"]}",
+      "type": "default"
+    }
+  }
+}
