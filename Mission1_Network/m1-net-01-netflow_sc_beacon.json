@@ -1,0 +1,32 @@
+[
+  {
+    "timestamp": "2024-02-21T02:18:01Z",
+    "src_ip": "10.25.17.43",
+    "src_host": "CLIENT-WKS-17",
+    "dst_ip": "203.0.113.55",
+    "dst_port": 443,
+    "protocol": "TCP",
+    "bytes_out": 912,
+    "bytes_in": 256
+  },
+  {
+    "timestamp": "2024-02-21T02:19:16Z",
+    "src_ip": "10.25.17.43",
+    "src_host": "CLIENT-WKS-17",
+    "dst_ip": "203.0.113.55",
+    "dst_port": 443,
+    "protocol": "TCP",
+    "bytes_out": 924,
+    "bytes_in": 244
+  },
+  {
+    "timestamp": "2024-02-21T02:20:31Z",
+    "src_ip": "10.25.17.43",
+    "src_host": "CLIENT-WKS-17",
+    "dst_ip": "203.0.113.55",
+    "dst_port": 443,
+    "protocol": "TCP",
+    "bytes_out": 930,
+    "bytes_in": 238
+  }
+]
