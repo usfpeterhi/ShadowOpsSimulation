@@ -5,6 +5,6 @@
     "client_host": "CLIENT-WKS-17",
     "query": "telemetry-update.ms-servstatus.com",
     "record_type": "A",
-    "response": "203.0.113.55"
+    "response": "185.62.58.132"
   }
 ]
