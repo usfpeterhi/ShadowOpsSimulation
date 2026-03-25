@@ -1,0 +1,20 @@
+{
+  "timestamp": "2024-02-21T02:16:11Z",
+  "host": "CLIENT-WKS-17",
+  "product": "edr",
+  "event_type": "process_start",
+  "user": "NT AUTHORITY\\SYSTEM",
+  "parent_process": "ScreenConnect.ClientService.exe",
+  "parent_pid": 1216,
+  "process_name": "cmd.exe",
+  "process_path": "C:\\Windows\\System32\\cmd.exe",
+  "command_line": "cmd.exe /c powershell.exe -nop -w hidden -enc UwBFAFQALQBN...",
+  "sha256": "f0f4c4f85a1a0f1aaf7b553cbb9d2d8b9f5f7a7527d0cd878f1b1f0ac77e1d01",
+  "network_connections": [],
+  "alert": {
+    "id": "ALERT-EDR-20240221-00123",
+    "severity": "high",
+    "rule_name": "Powershell spawned by remote control tool",
+    "status": "open"
+  }
+}
