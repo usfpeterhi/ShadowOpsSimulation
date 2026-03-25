@@ -10,7 +10,7 @@
     {
       "timestamp": "2024-02-21T08:07:10Z",
       "author": "tier1.analyst",
-      "text": "EDR alert from CLIENT-WKS-17: ScreenConnect.ClientService.exe -> cmd.exe -> powershell.exe (encoded). NetFlow shows recurring 443 traffic to 203.0.113.55."
+      "text": "EDR alert from CLIENT-WKS-17: ScreenConnect.ClientService.exe -> cmd.exe -> powershell.exe (encoded). NetFlow shows recurring 443 traffic to 185.62.58.132."
     },
     {
       "timestamp": "2024-02-21T08:22:41Z",
