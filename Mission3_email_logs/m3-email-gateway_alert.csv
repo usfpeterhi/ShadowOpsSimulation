@@ -1,0 +1,6 @@
+Timestamp,Recipient,Sender,Subject,Disposition,DetectionCategory
+2025-03-02T11:21:03Z,sales@contoso-industries.com,"support@random-crm.io","Re: Important account notification",Blocked,Phish
+2025-03-03T08:44:12Z,ceo@contoso-industries.com,"ceo@contoso-industires.com","Urgent: Wire transfer needed",Quarantined,Impersonation
+2025-03-05T15:09:44Z,hr@contoso-industries.com,"resume@job-cv-upload.com","New CV for open role",Blocked,Malware
+2025-03-06T15:18:32Z,ap@contoso-industries.com,"billing@northshore-fabr1cation.com","URGENT: Updated Banking Details for Invoice 2025-0231",Allowed,NotCategorized
+2025-03-07T09:03:01Z,it@contoso-industries.com,"no-reply@microsoftsupport.com","Password expiry notification",Blocked,Phish
