@@ -1,0 +1,35 @@
+{
+  "eventVersion": "1.08",
+  "userIdentity": {
+    "type": "IAMUser",
+    "principalId": "AIDAI23EXAMPLEUSERID",
+    "arn": "arn:aws:iam::123456789012:user/devops-deploy-svc",
+    "accountId": "123456789012",
+    "accessKeyId": "AKIAVJ3X7M2QEXAMPLE4",
+    "userName": "devops-deploy-svc"
+  },
+  "eventTime": "2024-03-14T23:34:02Z",
+  "eventSource": "iam.amazonaws.com",
+  "eventName": "CreateUser",
+  "awsRegion": "us-east-1",
+  "sourceIPAddress": "91.108.56.142",
+  "userAgent": "aws-cli/2.15.10 Python/3.11.6 Linux/5.15.0",
+  "requestParameters": {
+    "userName": "svc_audit_tmp"
+  },
+  "responseElements": {
+    "user": {
+      "path": "/",
+      "userName": "svc_audit_tmp",
+      "userId": "AIDAI45NEWUSERIDEXMP",
+      "arn": "arn:aws:iam::123456789012:user/svc_audit_tmp",
+      "createDate": "Mar 14, 2024 11:34:02 PM"
+    }
+  },
+  "requestID": "d4e5f6g7-h8i9-0123-defg-234567890123",
+  "eventID": "4d5e6f7g-8h9i-0123-4567-890123defghi",
+  "readOnly": false,
+  "eventType": "AwsApiCall",
+  "managementEvent": true,
+  "recipientAccountId": "123456789012"
+}
