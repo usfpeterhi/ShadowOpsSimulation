@@ -1,0 +1,52 @@
+[
+  {
+    "CreationTime": "2025-03-06T14:59:11Z",
+    "Operation": "MailboxLogin",
+    "UserId": "ap@contoso-industries.com",
+    "ClientIPAddress": "198.51.100.24",
+    "UserAgent": "Mozilla/5.0 (Windows NT 10.0; Outlook 16.0)",
+    "ResultStatus": "Succeeded"
+  },
+  {
+    "CreationTime": "2025-03-06T15:07:42Z",
+    "Operation": "MailboxLogin",
+    "UserId": "ap@contoso-industries.com",
+    "ClientIPAddress": "102.89.14.201",
+    "UserAgent": "Outlook/16.0 (Windows NT 10.0; MAPI;)",
+    "ResultStatus": "Succeeded"
+  },
+  {
+    "CreationTime": "2025-03-06T15:08:03Z",
+    "Operation": "UpdateInboxRules",
+    "UserId": "ap@contoso-industries.com",
+    "ClientIPAddress": "102.89.14.201",
+    "OperationProperties": {
+      "RuleName": "Voicemail Cleanup",
+      "RuleAction": "MoveToFolder",
+      "RuleCondition": "SubjectContains: invoice; From: billing@northshore-fabrication.com",
+      "DestinationFolder": "RSS Feeds"
+    }
+  },
+  {
+    "CreationTime": "2025-03-06T15:08:15Z",
+    "Operation": "UpdateInboxRules",
+    "UserId": "ap@contoso-industries.com",
+    "ClientIPAddress": "102.89.14.201",
+    "OperationProperties": {
+      "RuleName": "Forward-Invoices",
+      "RuleAction": "ForwardTo",
+      "RuleCondition": "SubjectContains: invoice; From: billing@northshore-fabrication.com",
+      "ForwardTo": "northshore.billing.review@proton-example.com"
+    }
+  },
+  {
+    "CreationTime": "2025-03-06T16:31:55Z",
+    "Operation": "HardDelete",
+    "UserId": "ap@contoso-industries.com",
+    "ClientIPAddress": "102.89.14.201",
+    "OperationProperties": {
+      "ItemSubject": "Security alert: New sign-in from unfamiliar location",
+      "ItemFolder": "Inbox"
+    }
+  }
+]
