@@ -1,0 +1,20 @@
+{
+  "timestamp": "2024-02-21T02:16:19Z",
+  "host": "CLIENT-WKS-17",
+  "product": "edr",
+  "event_type": "process_start",
+  "user": "NT AUTHORITY\\SYSTEM",
+  "parent_process": "powershell.exe",
+  "parent_pid": 2332,
+  "process_name": "rundll32.exe",
+  "process_path": "C:\\Windows\\System32\\rundll32.exe",
+  "command_line": "rundll32.exe C:\\ProgramData\\SCBackupRelay\\backup.dll,EntryPoint",
+  "sha256": "9cbb4d2b782a13422aa7fd9c7d95aa5d1b0c9ef789fd61a7643f1391b6c0aee2",
+  "network_connections": [
+    {
+      "dst_ip": "203.0.113.55",
+      "dst_port": 443,
+      "protocol": "TCP"
+    }
+  ]
+}
