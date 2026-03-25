@@ -1,0 +1,14 @@
+<Users>
+  <User>
+    <Name>Administrator</Name>
+    <Role>SuperUser</Role>
+    <CreatedUtc>2023-10-01T12:01:45Z</CreatedUtc>
+  </User>
+  <User>
+    <Name>svc_backup_admin</Name>
+    <Role>SuperUser</Role>
+    <CreatedUtc>2024-02-21T02:14:07Z</CreatedUtc>
+    <LastLoginUtc>2024-02-21T02:14:33Z</LastLoginUtc>
+    <CreatedBy>SetupWizard</CreatedBy>
+  </User>
+</Users>
