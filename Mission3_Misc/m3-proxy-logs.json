@@ -1,0 +1,30 @@
+[
+  {
+    "timestamp": "2025-02-10T15:11:03Z",
+    "user": "AP-WS-07\\erin",
+    "src_ip": "10.10.20.57",
+    "url": "https://portal.northshore-fabrication.com/login",
+    "http_method": "GET",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "action": "allowed"
+  },
+  {
+    "timestamp": "2025-03-04T16:42:55Z",
+    "user": "AP-WS-07\\erin",
+    "src_ip": "10.10.20.57",
+    "url": "https://portal-northshorebilling.com/login",
+    "http_method": "GET",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "action": "allowed",
+    "category": "Newly registered domain"
+  },
+  {
+    "timestamp": "2025-03-04T16:43:12Z",
+    "user": "AP-WS-07\\erin",
+    "src_ip": "10.10.20.57",
+    "url": "https://portal-northshorebilling.com/api/auth",
+    "http_method": "POST",
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "action": "allowed"
+  }
+]
