@@ -1,0 +1,37 @@
+[
+  {
+    "timestamp": "2025-03-05T13:21:09Z",
+    "userPrincipalName": "ap@contoso-industries.com",
+    "ipAddress": "198.51.100.24",
+    "city": "Tampa",
+    "country": "US",
+    "status": "Success",
+    "mfaRequired": true,
+    "clientApp": "Outlook Desktop",
+    "riskLevelDuringSignIn": "none"
+  },
+  {
+    "timestamp": "2025-03-06T14:55:32Z",
+    "userPrincipalName": "ap@contoso-industries.com",
+    "ipAddress": "102.89.14.200",
+    "city": "Lagos",
+    "country": "NG",
+    "status": "Failure",
+    "failureReason": "Invalid password",
+    "mfaRequired": false,
+    "clientApp": "Legacy Authentication",
+    "riskLevelDuringSignIn": "medium"
+  },
+  {
+    "timestamp": "2025-03-06T15:07:42Z",
+    "userPrincipalName": "ap@contoso-industries.com",
+    "ipAddress": "102.89.14.201",
+    "city": "Lagos",
+    "country": "NG",
+    "status": "Success",
+    "mfaRequired": false,
+    "clientApp": "IMAP",
+    "riskLevelDuringSignIn": "high",
+    "conditionalAccessStatus": "notApplied"
+  }
+]
