@@ -1,0 +1,66 @@
+{
+  "user": "devops-deploy-svc",
+  "attached_policies": [
+    {
+      "PolicyName": "DevOpsDeploymentPolicy",
+      "PolicyArn": "arn:aws:iam::123456789012:policy/DevOpsDeploymentPolicy",
+      "AttachmentDate": "2023-11-15T14:22:00Z",
+      "PolicyDocument": {
+        "Version": "2012-10-17",
+        "Statement": [
+          {
+            "Sid": "ECSDeployment",
+            "Effect": "Allow",
+            "Action": [
+              "ecs:UpdateService",
+              "ecs:DescribeServices",
+              "ecs:RegisterTaskDefinition"
+            ],
+            "Resource": "*"
+          },
+          {
+            "Sid": "S3ReadWrite",
+            "Effect": "Allow",
+            "Action": [
+              "s3:GetObject",
+              "s3:PutObject",
+              "s3:ListBucket"
+            ],
+            "Resource": [
+              "arn:aws:s3:::prod-customer-exports",
+              "arn:aws:s3:::prod-customer-exports/*",
+              "arn:aws:s3:::deployment-artifacts",
+              "arn:aws:s3:::deployment-artifacts/*"
+            ]
+          },
+          {
+            "Sid": "IAMFullAccess",
+            "Effect": "Allow",
+            "Action": "iam:*",
+            "Resource": "*",
+            "Note": "VIOLATION: Overly permissive - violates least privilege principle"
+          },
+          {
+            "Sid": "EC2Launch",
+            "Effect": "Allow",
+            "Action": [
+              "ec2:RunInstances",
+              "ec2:DescribeInstances",
+              "ec2:TerminateInstances"
+            ],
+            "Resource": "*"
+          }
+        ]
+      }
+    }
+  ],
+  "security_assessment": {
+    "risk_level": "HIGH",
+    "findings": [
+      "IAM policy grants full iam:* permissions (least privilege violation)",
+      "S3 permissions include access to prod-customer-exports bucket containing PII",
+      "EC2 permissions allow instance launch in any region",
+      "No resource-level restrictions on most permissions"
+    ]
+  }
+}
