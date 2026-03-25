@@ -1,0 +1,61 @@
+Threat Intel Pivot Notes – ScreenConnect Exploitation
+
+Scenario Observable (Lab):
+- Internal label: "Suspicious C2 IP observed in TechFlow MSP environment"
+- Role in lab: destination for outbound HTTPS beacons from CLIENT-WS-14 and other endpoints
+- Purpose: give analysts a starting point for OSINT pivoting around real-world ScreenConnect exploitation activity
+
+Published ScreenConnect IOCs (for student OSINT)
+
+1) IP: 185.62.58.132
+   - Type: IPv4 address
+   - Public reporting:
+     - Reported in multiple write-ups as infrastructure linked to exploitation of ConnectWise ScreenConnect vulnerabilities (CVE-2024-1708 / CVE-2024-1709).
+     - Described in vendor analysis as an external location contacted after successful ScreenConnect exploitation, associated with post-exploitation activity and tooling download.
+   - Suggested pivots for students:
+     - VirusTotal / XDR TI: reputation, related URLs, communicating samples.
+     - Shodan / Censys: historical open ports and services, SSL cert reuse.
+     - urlscan.io: URLs and paths where this IP appears in scans.
+
+2) IP: 108.61.210.72
+   - Type: IPv4 address
+   - Public reporting:
+     - Documented alongside 185.62.58.132 as an IP contacted after ScreenConnect exploitation, using URIs of the form "/MyUserName_DEVICEHOSTNAME".
+     - Flagged as potentially malicious and linked to the same ScreenConnect exploitation activity cluster.
+   - Suggested pivots for students:
+     - Look up HTTP/HTTPS services and historical banners.
+     - Search for references to this IP in public blogs / advisories about CVE-2024-1708/1709.
+     - Compare first-seen / last-seen dates across intel sources.
+
+3) Pattern IOC: URI path "/MyUserName_DEVICEHOSTNAME"
+   - Type: URI pattern
+   - Public reporting:
+     - Mentioned as an anomalous URI used when compromised ScreenConnect servers communicate outward post-exploitation.
+   - Suggested pivots for students:
+     - Search for this URI pattern in:
+       - Web proxy / firewall logs (if available in other labs/environments).
+       - Public sandboxes and urlscan.io.
+     - Use as a hunting rule component: any outbound traffic to the above IPs with this path strongly suggests ScreenConnect-related post-exploitation.
+
+Mapping to This Lab (How to Frame It for Students)
+
+- In this TechFlow MSP scenario, treat the lab’s “suspicious C2 IP” as ANALOGOUS to the published ScreenConnect IOCs above:
+  - Same class of activity (post-exploitation C2 / tooling download after CVE-2024-1709 abuse).
+  - Similar tradecraft: initial ScreenConnect compromise → malicious extension / payload → outbound HTTPS to attacker infrastructure.
+
+- Recommended student activities:
+  - Use the IP from EDR / NetFlow logs in this lab PLUS the published IPs above to:
+    - Practice VT / urlscan / Shodan pivoting.
+    - Compare infrastructure characteristics (ports, certs, hosting providers).
+  - Discuss:
+    - How quickly such infrastructure changes (ephemeral C2 vs longer-lived infra).
+    - Why relying only on static IPs is fragile, and why pattern-based detection (URI paths, process chains, extension file names) matters.
+
+Analyst Assessment (How to Phrase It in the Lab)
+
+- The behavior described in vendor reporting around 185.62.58.132 and 108.61.210.72 is consistent with threat actors exploiting ScreenConnect flaws for post-exploitation access and tooling.
+- In the TechFlow MSP incident, the lab C2 IP plus these published IOCs support an assessment that:
+  - The ScreenConnect server was not just misconfigured but actively exploited.
+  - Observed outbound beacons likely represent command-and-control or staging, not benign RMM activity.
+- Students should state attribution and confidence carefully:
+  - Example: “Assessed with moderate confidence that this activity aligns with known ScreenConnect exploitation campaigns documented by multiple vendors; high confidence that it represents malicious post-exploitation C2 rather than legitimate ScreenConnect traffic.”
