@@ -1,0 +1,12 @@
+{
+  "timestamp": "2024-02-21T02:17:03Z",
+  "host": "CLIENT-WKS-17",
+  "product": "edr",
+  "event_type": "service_install",
+  "user": "NT AUTHORITY\\SYSTEM",
+  "service_name": "SCBackupRelay",
+  "service_display_name": "ScreenConnect Backup Relay",
+  "image_path": "C:\\ProgramData\\SCBackupRelay\\backupsvc.exe",
+  "start_type": "auto",
+  "sha256": "3ee4b5e7b310e1f72ecdb566e98eb7b4216a47722aaf90a65d9b8f639e35e1b4"
+}
