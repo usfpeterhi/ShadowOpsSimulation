@@ -1,0 +1,15 @@
+<Event>
+  <System>
+    <Provider Name="Service Control Manager"/>
+    <EventID>7045</EventID>
+    <TimeCreated SystemTime="2024-02-21T02:17:03.997Z"/>
+    <Computer>CLIENT-WKS-17.corp.techflow.local</Computer>
+  </System>
+  <EventData>
+    <Data Name="ServiceName">SCBackupRelay</Data>
+    <Data Name="ImagePath">C:\ProgramData\SCBackupRelay\backupsvc.exe</Data>
+    <Data Name="ServiceType">0x10</Data>
+    <Data Name="StartType">auto start</Data>
+    <Data Name="AccountName">LocalSystem</Data>
+  </EventData>
+</Event>
