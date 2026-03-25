@@ -1,0 +1,29 @@
+commit 3f7a8b2e1c9d4f6a8e2b7c5d9a1f3e8b4c6d2a7e
+Author: Jordan Kim <jkim@datasync-solutions.com>
+Date:   Thu Mar 14 22:52:11 2024 +0000
+
+    Quick fix for deployment script timeout issue
+
+diff --git a/.env b/.env
+new file mode 100644
+index 0000000..7a3e9f2
+--- /dev/null
++++ b/.env
+@@ -0,0 +1,5 @@
++# AWS Deployment Credentials
++AWS_ACCESS_KEY_ID=AKIAVJ3X7M2QEXAMPLE4
++AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
++AWS_DEFAULT_REGION=us-east-1
++DEPLOY_TIMEOUT=600
+
+diff --git a/deploy.sh b/deploy.sh
+index 2a3b4c5..6d7e8f9 100644
+--- a/deploy.sh
++++ b/deploy.sh
+@@ -1,5 +1,6 @@
+ #!/bin/bash
++source .env
+ 
+-# TODO: Fix timeout on production deployments
++# Fixed timeout parameter
+ aws ecs update-service --cluster prod-cluster --service web-api --force-new-deployment
