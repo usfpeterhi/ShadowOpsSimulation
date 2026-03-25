@@ -1,0 +1,23 @@
+Received: from mail-ru102.smtp-in.example.net (203.0.113.45)
+    by NAM04-BN8-obe.outlook.com with ESMTPS id 1234567890
+    for <ap@contoso-industries.com>;
+    Thu, 06 Mar 2025 15:18:32 +0000
+From: "Northshore Billing" <billing@northshore-fabr1cation.com>
+Reply-To: billing@northshore-fabr1cation.com
+To: ap@contoso-industries.com
+Subject: URGENT: Updated Banking Details for Invoice 2025-0231
+Date: Thu, 06 Mar 2025 10:18:27 -0500
+Message-ID: <CAF12345-bec-1@northshore-fabr1cation.com>
+Return-Path: <bounce+12345@compromised-tenant-mail.onmicrosoft.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset="UTF-8"
+
+Authentication-Results: contoso-industries.com;
+    spf=fail (sender IP 203.0.113.45 is not authorized to send for northshore-fabrication.com) smtp.mailfrom=compromised-tenant-mail.onmicrosoft.com;
+    dkim=none (no DKIM record found for northshore-fabr1cation.com);
+    dmarc=fail (p=reject) header.from=northshore-fabrication.com
+
+X-Originating-IP: [203.0.113.45]
+X-MS-Exchange-Organization-AVStamp-Enterprise: 1.0
+X-MS-Exchange-Organization-SCL: -1
+X-MS-Exchange-Organization-AuthAs: Anonymous
